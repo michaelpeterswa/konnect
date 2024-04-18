@@ -1,0 +1,8 @@
+zsh
+inetutils
+redis
+mariadb
+clickhouse
+mongosh-bin
+google-cloud-cli
+croc

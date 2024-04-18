@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "running yamllint against repository"
+yamllint .
+
+echo "running hadolint against Dockerfile"
+hadolint Dockerfile
+
+echo "running shellcheck against repository"
+shellcheck scripts/**.sh -f gcc

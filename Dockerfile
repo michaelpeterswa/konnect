@@ -1,0 +1,14 @@
+# archlinux is rolling release, not specifying version 
+# hadolint ignore=DL3006
+FROM --platform=$BUILDPLATFORM archlinux as stage1
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
+COPY scripts/ /scripts/
+RUN  /scripts/configure.sh
+
+FROM stage1 as stage2
+RUN /scripts/install_packages.sh
+
+FROM stage2 as stage3
+RUN /scripts/modify_shell.sh
