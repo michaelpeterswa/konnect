@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Address Security Concerns
-pacman-key --init
+dnf update -y
 
-# Update All Packages
-pacman -Syu --noconfirm
+dnf install epel-release -y

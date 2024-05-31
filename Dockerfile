@@ -1,6 +1,4 @@
-# archlinux is rolling release, not specifying version 
-# hadolint ignore=DL3006
-FROM --platform=$BUILDPLATFORM archlinux as stage1
+FROM --platform=$BUILDPLATFORM rockylinux:9 as stage1
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 

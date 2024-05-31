@@ -1,6 +1,9 @@
-base
-base-devel
+zsh
 git
 sudo
 go
-coreutils
+redis
+jq
+fzf
+ripgrep
+mysql
