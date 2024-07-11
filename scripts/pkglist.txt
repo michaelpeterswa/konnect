@@ -11,3 +11,6 @@ mysql
 dnsutils
 iftop
 mtr
+screen
+tcpdump
+net-tools
