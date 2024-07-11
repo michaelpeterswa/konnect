@@ -2,8 +2,12 @@ zsh
 git
 sudo
 go
+python3
 redis
 jq
 fzf
 ripgrep
 mysql
+dnsutils
+iftop
+mtr
