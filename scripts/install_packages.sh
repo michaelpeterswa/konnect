@@ -29,3 +29,7 @@ elif [ "$unamestr" = "aarch64" ] || [ $unamestr = "arm64" ]; then
     mv yq_linux_arm64 /usr/local/bin/yq
     rm -rf yq_linux_arm64.tar.gz yq.1 install-man-page.sh
 fi
+
+curl -sSLO https://www.apache.org/dyn/closer.lua/pulsar/pulsar-4.0.5/apache-pulsar-4.0.5-bin.tar.gz?action=download
+tar -xvzf apache-pulsar-4.0.5-bin.tar.gz?action=download
+rm -rf apache-pulsar-4.0.5-bin.tar.gz?action=download

@@ -15,6 +15,6 @@ hooks:
 
 .PHONY: start-and-enter
 start-and-enter:
-	BUILDKIT_PROGRESS=plain docker-compose build --no-cache
-	docker-compose up -d
-	docker-compose exec konnect zsh
+	BUILDKIT_PROGRESS=plain docker compose build --no-cache
+	docker compose up -d
+	docker compose exec konnect zsh
